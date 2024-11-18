@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #FF69B4 0%, #4169E1 100%);
+    min-height: 100vh;
+    font-family: 'Aptos', sans-serif;
+    color: white;
+  }
+}
+
+.gradient-bg {
+  @apply min-h-screen flex items-center justify-center p-6;
+}
+
+.card {
+  @apply bg-white/10 backdrop-blur-lg rounded-xl p-8 w-full max-w-2xl shadow-2xl;
+}
+
+.input-field {
+  @apply w-full bg-white/20 rounded-lg px-4 py-2 text-white placeholder-white/70 border border-white/30 focus:border-white/50 focus:outline-none;
+}
+
+.radio-group {
+  @apply space-y-2;
+}
+
+.radio-option {
+  @apply flex items-center space-x-2 text-white cursor-pointer;
+}
+
+.button {
+  @apply bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 backdrop-blur-sm;
+}
